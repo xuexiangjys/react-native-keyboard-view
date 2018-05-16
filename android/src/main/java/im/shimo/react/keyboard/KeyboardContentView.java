@@ -55,6 +55,11 @@ class KeyboardContentView extends ReactViewGroup implements RootView {
     }
 
     @Override
+    public void handleException(Throwable t) {
+
+    }
+
+    @Override
     public void requestDisallowInterceptTouchEvent(boolean disallowIntercept) {
         // No-op - override in order to still receive events to onInterceptTouchEvent
         // even when some other view disallow that
